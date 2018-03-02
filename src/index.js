@@ -16,13 +16,20 @@ module.exports = function getZerosCount(number, base) {
                       ii++;
                   }
               }//console.log(arr);
-              var t= arr.length;
+              var t= arr.length-1;
+              console.log(t + " t number");
               var y = 1;
-              if(t > 2){
-                for (var h = t-1; h >= 0; h--){
-                if(arr[h-1]==arr[h-2]){
-                  y++;
-                }}};
+              if(t >= 0){
+                for (var h = t; h >= 0; h--){
+
+                if(arr[arr.length-1]==arr[h-1]){
+                  console.log(t);
+                  console.log(arr[h] + " massive");
+                  console.log(arr[h-1] + " massive");
+                  y=y+1;
+                  console.log(y + " this is y");
+                }
+              }};
   var ad = ii;
    //console.log(ad + " составные")
 
@@ -42,6 +49,6 @@ module.exports = function getZerosCount(number, base) {
   //console.log(v + "  answer");
 
 
-  return (v);
+  return Math.floor(v/y);
   // your implementation
 }
