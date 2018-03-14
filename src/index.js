@@ -3,7 +3,7 @@ module.exports = function getZerosCount(number, base) {
 
   var arr =[];
   var ii = 2;
-
+var why;
   var temp = number;
       for( ii; ii <= base; ii++){
             //  while (ii <= base)
